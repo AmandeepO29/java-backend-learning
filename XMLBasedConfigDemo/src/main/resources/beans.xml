@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean id="orderService" name="orderServiceBean" class="in.strikes.OrderService">-->
+<!--    <constructor-arg ref="paymentService"/>-->
+<!--    </bean>-->
+    <!--id for any bean is unique but names can be multiple -->
+
+<!--    <bean id="orderService1" class="in.strikes.OrderService"> </bean>-->
+
+<!--    <bean id="paymentService" class="in.strikes.Payment.PaymentService">-->
+<!--    <constructor-arg index ="0" name="type" value="UPI"/>-->
+<!--        <constructor-arg index="1" name="retryCount" value="29"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="orderService" name="orderServiceBean" class="in.strikes.OrderService">-->
+<!--        -->
+<!--    </bean>-->
+
+
+
+<!--    <bean id ="upiPaymentService" class="in.strikes.Payment.UPIPaymentService"/>-->
+<!--    <bean id="cardPaymentService" class="in.strikes.Payment.CardPaymentService"/>-->
+<!--    <bean id="orderService" class=" in.strikes.OrderService">-->
+<!--        <constructor-arg ref="cardPaymentService"> </constructor-arg>-->
+<!--    </bean>-->
+
+<!--    <bean id="userService" class="in.strikes.UserService">-->
+<!--        <constructor-arg name="usernames">-->
+<!--            <list>-->
+<!--                <value>Aman</value>-->
+<!--                <value>Rahul</value>-->
+<!--                <value>Rohan</value>-->
+<!--            </list>-->
+<!--        </constructor-arg>-->
+
+<!--    </bean>-->
+
+    <bean id="userService" class="in.strikes.UserService"
+    init-method="init"
+    destroy-method="cleanup">
+<!--    scope="prototype">-->
+
+    </bean>
+</beans>
